@@ -11,20 +11,16 @@
 
 <body>
 
-  <div id='background-wrapper'></div> <!-- houses the bubble animation to keep scroll bars from freaking out -->
-
   <header>
     <h1>The Librarian's Corner</h1>
     <p class='subtitle'>Browse, search, and explore. Your taste buds will thank you later.</p>
   </header>
 
   <section class='recipe-controls'> <!-- houses the filter buttons -->
-    <!-- commenting out search bar due to current lack of functionality <input id='search' type='text' placeholder='Search recipes...'> -->
 
     <div class='filters type-filters'> <!-- filter buttons for type of entry -->
       <h2>Filter by Type</h2>
       <button class='active' data-type='all'>All</button>
-      <!-- commenting out food button due to current lack of utilization <button data-type='food'>Food</button> -->
       <button data-type='drink'>Drinks</button>
       <button data-type='shot'>Shots</button>
     </div>
@@ -32,7 +28,7 @@
     <div class='filters base-filters'> <!-- filter buttons for drink base -->
       <h2>Filter by Base</h2>
       <button class='active' data-base='all'>All</button>
-      <!-- commenting out rum button due to current lack of utilization <button data-base='rum'>Rum</button> -->
+      <button data-base='rum'>Rum</button>
       <button data-base='vodka'>Vodka</button>
       <button data-base='whiskey'>Whiskey</button>
       <button data-base='other'>Other</button>
@@ -41,8 +37,9 @@
     <div class='filters event-filters'> <!-- filter buttons for origin/event -->
       <h2>Filter by Origin</h2>
       <button class='active' data-event='all'>All</button>
-      <button data-event='nye25'>NYE '25</button>
-      <button data-event='staycation'>Staycation</button>
+      <button data-event='christmas'>Christmas</button>
+      <button data-event='halloween'>Halloween</button>
+      <button data-event='summer'>Summer</button>
     </div>
 
   </section>
@@ -51,292 +48,556 @@
 
     <a class='recipe-card' href=''
       data-category='shot'
-      data-base='vodka'
-      data-event='nye25'
+      data-base='other'
+      data-event='halloween'
       target='_blank'>
 
-      <img src='https://www.allrecipes.com/thmb/u5TNkzT67VvBypKaj5dhXSgQzO0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/27114-Chocolate-Cake-Shot-3x4-0254-50c8f4b28c1340e4b8e169970d7e308c.jpg'>
-      <div class='card-content'>
-        <span class='tag'>Shot</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Birthday Cake</h2>
-        <ol>
-          <li>1 part Vanilla Vodka</li>
-          <li>1 part Frangelico</li>
-          <li>Optional: Sugar Rim and Lemon Bite</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Birthday Cake' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
-      target='_blank'>
-
-      <img src='https://t3.ftcdn.net/jpg/15/85/62/22/360_F_1585622243_M0nPuNdzTtYKUv2v1aINKc0m4sfBYi29.jpg'>
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Blackout Gold Rush</h2>
+        <span class='desc'>Halloween</span>
+        <h2>Alien Brain Hemorrhage</h2>
         <ol>
-          <li>A squeeze of Citrus</li>
-          <li>0.5 oz Blackberry Syrup/Puree/Liqueur</li>
-          <li>2 oz Vodka</li>
-          <li>Fill w/ Red Bull</li>
+          <li>2 parts Peach Schnapps</li>
+          <li>1 part Bailey's</li>
+          <li>3-5 drops Blue Curacao</li>
+          <li>3-5 drops Grenadine</li>
         </ol>
+        <span class='steps'>Add peach schapps to a glass. Float Bailey's on top. Slowly add drops of blue curacao and Bailey's for visual effect.</span>
       </div>
-
-    </a> <!-- end of 'Blackout Gold Rush' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
-      target='_blank'>
-
-      <img src='https://thumbs.dreamstime.com/b/refreshing-lemonade-bubbles-glistening-citrus-slice-tall-glass-filled-bubbly-garnished-lemon-condensation-create-395941756.jpg'>
-      <div class='card-content'>
-        <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>The Countdown Charger</h2>
-        <ol>
-          <li>2 oz Vodka</li>
-          <li>Fill w/ Red Bull</li>
-          <li>A Splash of OJ or Lemonade</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'The Countdown Charger' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='whiskey'
-      data-event='staycation'
-      target='_blank'>
-
-      <img src='https://www.liquor.com/thmb/rxbQEXR-CQpExjfS8xtOAWXLovM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bourbon-old-fashioned-4000x4000-primary-ig-f0ce04bec6754db187ab1e8a16fd45c3.jpg'>
-      <div class='card-content'>
-        <span class='tag'>Drink</span>
-        <span class='desc'>Staycation '26</span>
-        <h2>Driftwood Reserve</h2>
-        <ol>
-          <li>0.25 oz Lemon Juice</li>
-          <li>0.5 oz Vanilla (or maple) Syrup</li>
-          <li>2 oz Whiskey</li>
-          <li>1 Dash Orange Bitters</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Driftwood Reserve' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
-      target='_blank'>
-
-      <img src='https://www.liquor.com/thmb/G5R_Y6cS-voBV1hYqI2mtoovoTQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/moscow-mule-4000x4000-primary-ig-3a364d63e57b4a9b8cf82ec1dc54eb30.jpg'>
-      <div class='card-content'>
-        <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Midnight Mule</h2>
-        <ol>
-          <li>0.5 - 1 oz Blackberry Puree/Liqueur</li>
-          <li>The Juice from 1/2 a Lime</li>
-          <li>2 oz Vodka</li>
-          <li>Top w/ Ginger Beer</li>
-          <li>Optional: Pinch of Edible Glitter</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Midnight Mule' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
-      target='_blank'>
-
-      <img src='https://www.liquor.com/thmb/by95CAoF-nj4w1til5itnQFFrg8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__liquor__2016__12__22114511__vodka-red-bull-720x720-recipe-b16a667ca354445799610e39be61e40a.jpg'>
-      <div class='card-content'>
-        <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Midnight Spark</h2>
-        <ol>
-          <li>A squeeze of Lime</li>
-          <li>1.5 - 2 oz Vodka</li>
-          <li>Fill the Glass 2/3 of the way w/ Red Bull</li>
-          <li>Top w/ Prosecco</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Midnight Spark' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='shot'
-      data-base='vodka'
-      data-event='starcation'
-      target='_blank'>
-
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-vvpQea8eGRDLBYBK7am0UR_AungwB0Osg&s'>
-      <div class='card-content'>
-        <span class='tag'>Shooter</span>
-        <span class='desc'>Staycation '26</span>
-        <h2>Night Swim</h2>
-        <ol>
-          <li>0.25 oz Lemon Juice</li>
-          <li>0.5 oz Blackberry Liqueur</li>
-          <li>1 oz Vodka</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Night Swim' recipe -->
-
-    <a class='recipe-card' href=''
-      data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
-      target='_blank'>
-
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-vvpQea8eGRDLBYBK7am0UR_AungwB0Osg&s'>
-      <div class='card-content'>
-        <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Prosecco New Year Spritz</h2>
-        <ol>
-          <li>0.5 - 1 oz Peach Schnapps</li>
-          <li>1 oz Vodka</li>
-          <li>A splash of OJ or Lemonade</li>
-          <li>Top w/ Prosecco</li>
-        </ol>
-      </div>
-
-    </a> <!-- end of 'Prosecco New Year Spritz' recipe -->
+    </a> <!-- end 'Alien Brain Hemorrhage' recipe -->
 
     <a class='recipe-card' href=''
       data-category='drink'
       data-base='other'
-      data-event='nye25'
+      data-event='christmas'
       target='_blank'>
 
-      <img src='https://cb.scene7.com/is/image/Crate/TourChampagneGlass8ozSSS22?$web_pdp_main_carousel_med$'>
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Red Bull Sparkling Toast</h2>
+        <span class='desc'>Christmas</span>
+        <h2>Bailey's Peppermint Cream Hot Chocolate</h2>
         <ol>
-          <li>1 part Red Bull</li>
-          <li>1 part Prosecco</li>
-          <li>A Squeeze of Citrus</li>
+          <li>1 oz Peppermint Schnapps</li>
+          <li>1.5 oz Bailey's</li>
+          <li>4 oz Hot Chocolate</li>
+          <li>Whipped Cream</li>
+          <li>Crushed Candy Cane</li>
         </ol>
       </div>
-
-    </a> <!-- end 'Red Bull Sparkling Toast' recipe -->
+    </a> <!-- end "Bailey's Peppermint Cream Hot Chocoloate" recipe -->
 
     <a class='recipe-card' href=''
       data-category='drink'
-      data-base='Vodka'
-      data-event='staycation'
+      data-base='vodka'
+      data-event='halloween'
       target='_blank'>
 
-      <img src='https://imageio.forbes.com/specials-images/imageserve/674a7c78386fdb04305b934f/Sparkling-water-glass-on-a-stone-parapet-with-a-mountain-view--Cool-glass-of-mineral/0x0.jpg?format=jpg&width=480'>
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Drink</span>
-        <span class='desc'>Staycation '26</span>
-        <h2>Seaside Whisper</h2>
+        <span class='desc'>Halloween</span>
+        <h2>Candy Corn</h2>
         <ol>
-          <li>0.5 oz Lime Juice</li>
-          <li>0.75 oz St-Germain</li>
-          <li>2 oz Vodka</li>
-          <li>Top w/ Sparkling Water</li>
+          <li>1 c Candy Corn</li>
+          <li>1 c Vanilla Vodka</li>
+          <li>0.5 oz Pineapple Juice</li>
+          <li>0.5 oz Ginger Beer</li>
+          <li>2.5 oz Candy Corn Vodka (infused)</li>
+          <li>3 oz Sparkling Water</li>
+        </ol>
+        <span class='steps'>Infuse vanilla vodka w/ candy corn to make the candy corn vodka. Garnish w/ white cotton candy or whipped topping.</span>
+      </div>
+    </a> <!-- end 'Candy Corn' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='whiskey'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <h2>Cinnamon Maple Whiskey Sour</h2>
+        <ol>
+          <li>1 oz Lemon Juice</li>
+          <li>1.5 oz Bulleit Burbon</li>
+          <li>2-4 tsp Maple Syrup</li>
+          <li>Pinch of Cinnamon</li>
         </ol>
       </div>
-
-    </a> <!-- end 'Seaside Whisper' recipe -->
+    </a> <!-- end 'Cinnamon Maple Whiskey Sour' recipe -->
 
     <a class='recipe-card' href=''
       data-category='shot'
-      data-base='vodka'
+      data-base='rum'
+      data-event='summer'
       target='_blank'>
 
-      <img src='https://homebodyeats.com/wp-content/uploads/2023/05/vegas-bomb.jpg'>
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Layered Shot</span>
+        <h2>Deep Ocean</h2>
+        <ol>
+          <li>1 part Blue Curacao</li>
+          <li>1 part Hpnotiq</li>
+          <li>1 part Coconut Rum</li>
+        </ol>
+        <span class='steps'>Layer ingredients in the order listed.</span>
+      </div>
+    </a> <!-- end 'Deep Ocean' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='other'
+      data-event='christmas'
+      target='_blank'>
+
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Shot</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Sparkling Celebration</h2>
+        <span class='desc'>Christmas</span>
+        <h2>Elf's Panties</h2>
         <ol>
-          <li>0.5 oz Peach Schnapps</li>
-          <li>1 oz Vodka</li>
-          <li>A Splash of Prosecco</li>
+          <li>1 part Creme de Menthe</li>
+          <li>1 part White Chocolate Liqueur</li>
         </ol>
       </div>
-
-    </a> <!-- end 'Sparkling Celebration' recipe -->
+    </a> <!-- end "Elf's Panties" recipe -->
 
     <a class='recipe-card' href=''
       data-category='drink'
-      data-base='vodka'
-      data-event='nye25'
+      data-base='rum'
+      data-event='halloween'
       target='_blank'>
 
-      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVWBBmK8dNqy2leYo4oulNRip5UkHDSelajg&s'>
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Drink</span>
-        <span class='desc'>NYE '25</span>
-        <h2>Sparkling Midnight Mule</h2>
+        <span class='desc'>Halloween</span>
+        <h2>Embalming Fluid</h2>
         <ol>
-          <li>The Juice from 1/2 a Lime</li>
-          <li>1.5 oz Vodka</li>
-          <li>Top w/ Ginger Beer</li>
-          <li>Finish w/ a Float of Prosecco</li>
-          <li>Optional: Pinch of Edible Glitter</li>
+          <li>0.5 oz Blue Curacao</li>
+          <li>0.5 oz Malibu</li>
+          <li>1 oz Sour Apple Pucker</li>
+          <li>5 oz Pineapple Juice</li>
+          <li>Splash of Sprite</li>
         </ol>
       </div>
+    </a> <!-- end 'Embalming Fluid' recipe -->
 
-    </a> <!-- end 'Sparkling Midnight Mule' recipe -->
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='other'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Grateful Dead</h2>
+        <ol>
+          <li>1 oz Vodka</li>
+          <li>1 oz Gin</li>
+          <li>1 oz Silver Tequila</li>
+          <li>1 oz White Rum</li>
+          <li>1 oz Triple Sec</li>
+          <li>3 oz Sprite</li>
+          <li>1 oz Blue Curacao</li>
+          <li>1 oz Rasperry Liqueur</li>
+        </ol>
+        <span class='steps'>Mix vodka, gin, tequila, rum, triple sec, and Sprite in a glass over ice. Slowly add blue curacao to one side of the glass and raspberry liqueur to the other side to create a tie dye effect. Mix for purple.</span>
+      </div>
+    </a> <!-- end 'Embalming Fluid' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <h2>Liquid Marijuana</h2>
+        <ol>
+          <li>0.5 oz Spiced Rum</li>
+          <li>0.5 oz Blue Curacao</li>
+          <li>0.5 oz Malibu</li>
+          <li>0.5 oz Midori</li>
+          <li>12 oz Pineapple Juice</li>
+          <li>Splash of Sweet & Sour</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Liquid Marijuana' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='rum'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shot</span>
+        <h2>Liquid Marijuana Shot</h2>
+        <h3>Equal Parts</h3>
+        <ol>
+          <li>Spiced Rum</li>
+          <li>Coconut Rum</li>
+          <li>Sweet & Sour</li>
+          <li>Midori</li>
+          <li>Pineapple Juice</li>
+          <li>Blue Curacao</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Liquid Marijuana' recipe -->
 
     <a class='recipe-card' href=''
       data-category='shot'
       data-base='vodka'
-      data-event='staycation'
       target='_blank'>
 
-      <img src='https://cdn.shopify.com/s/files/1/0025/8100/4361/articles/los-sundays-tequila-sunrise-shot.png?v=1693502077'>
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shot</span>
+        <h2>Lonely Jelly Fish</h2>
+        <ol>
+          <li>1 part Blue Curacao</li>
+          <li>1 part Vodka</li>
+          <li>1 part Grand Marnier</li>
+          <li>1 drop Bailey's</li>
+        </ol>
+      <span class='steps'>Layer ingredients in the order listed. Add the drop of Bailey's last for visual effect.</span>
+      </div>
+    </a> <!-- end 'Lonely Jelly Fish' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      data-event='summer'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <h2>Motion of the Ocean</h2>
+        <ol>
+          <li>1 oz Lemon Juice</li>
+          <li>1 oz Triple Sec</li>
+          <li>2 oz Creme de Banana</li>
+          <li>2 oz Coconut Rum</li>
+          <li>5 oz Pineapple Juice</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Motion of the Ocean' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='whiskey'
+      data-event='christmas'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Christmas</span>
+        <h2>Mrs. Claus</h2>
+        <ol>
+          <li>2 oz Cranberry Juice</li>
+          <li>2 oz Whiskey</li>
+          <li>1 Cinnamon Stick (or 0.25 tsp Cinnamon)</li>
+          <li>1-2 tbsp Simple Syrup</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Mrs. Claus' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <h2>Pain in the Ass</h2>
+        <ol>
+          <li>0.5 oz 151 Proof Rum</li>
+          <li>0.5 oz Sour Apple Schnapps</li>
+          <li>1 oz Midori</li>
+          <li>1 oz Coconut Rum</li>
+          <li>2 oz Pineapple Juice</li>
+          <li>2 oz Sprite</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Pain in the Ass' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='vodka'
+      target='_blank'>
+
+      <img src=''>
       <div class='card-content'>
         <span class='tag'>Shooter</span>
-        <span class='desc'>Staycation '26</span>
-        <h2>Sunset Spark</h2>
+        <h2>Pineapple Upside Down Cake</h2>
         <ol>
-          <li>0.5 oz Blood Orange Juice<br>(or regular orange juice)</li>
-          <li>1 oz Vodka</li>
+          <li>0.75 oz Cake Vodka (or Vanilla Vodka)</li>
+          <li>0.75 oz Pineapple Juice</li>
           <li>Splash of Grenadine</li>
         </ol>
       </div>
+    </a> <!-- end 'Pineapple Upside Down Cake' recipe -->
 
-    </a> <!-- end 'Sunset Spark' recipe -->
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Poison Apple</h2>
+        <ol>
+          <li>1 drop Black Food Gel</li>
+          <li>0.5 oz Cinnamon Schnapps or Whiskey</li>
+          <li>0.5 oz Lime Juice</li>
+          <li>1 oz Apple Juice</li>
+          <li>2 oz White Rum</li>
+        </ol>
+      <span class='steps'>Mix black food gel + cinnamon schnapps (or whiskey) in a separate tube. Serve with tube standing in cocktail (Roadhouse kicker style!)</span>
+      </div>
+    </a> <!-- end 'Poison Apple' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='whiskey'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Poison Apple 2</h2>
+        <ol>
+          <li>1 oz Grenadine</li>
+          <li>2 oz Fireball</li>
+          <li>0.33 c Apple Cider</li>
+          <li>0.33 c Cranberry Juice</li>
+          <li>0.25 tsp Edible Glitter</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Poison Apple 2' recipe -->
 
     <a class='recipe-card' href=''
       data-category='drink'
       data-base='vodka'
-      data-event='staycation'
       target='_blank'>
 
-      <img src='https://upload.wikimedia.org/wikipedia/commons/3/3a/Pool-side_Mimosas_at_The_Standard_Hotel.jpg'>
+      <img src=''>
       <div class='card-content'>
-        <span class='tag'>Drink - Batched</span>
-        <span class='desc'>Staycation '26</span>
-        <h2>Villa Spritz</h2>
+        <span class='tag'>Drink</span>
+        <h2>Salted Caramel Mudslide</h2>
         <ol>
-          <li>1 c Grapefruit Juice</li>
-          <li>1.5 c Vodka</li>
-          <li>2 c Orange Juice</li>
-          <li>1 c Prosecco<br>(add just before serving)</li>
+          <li>3 oz Bailey's</li>
+          <li>3 oz Kahlua</li>
+          <li>3 oz Vodka</li>
+          <li>1 tbsp Caramel Sauce</li>
+          <li>1 tbsp Raw Sugar</li>
+          <li>Pinch of Salt</li>
+        </ol>
+      <span class='steps'>Rim glass w/ caramel + salt. Drizzle caramel in glass. Mix Bailey's, Kahlua, + Vodka in shaker. Fill glass halfway w/ ice. Garnish w/ flake salt.</span>
+      </div>
+    </a> <!-- end 'Salted Caramel Mudslide' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='vodka'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shot</span>
+        <h2>Salted Caramel Shots</h2>
+        <ol>
+          <li>2 oz Rumchata</li>
+          <li>3 oz Caramel Vodka</li>
+        </ol>
+      <span class='steps'>Rim glass w/ caramel syrup + salt. Dip a piece of catamel candy in salt, place on rim of glass.</span>
+      </div>
+    </a> <!-- end 'Salted Caramel Shots' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='vodka'
+      data-event='christmas'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Jello Shot</span>
+        <span class='desc'>Christmas</span>
+        <h2>Santa Hat</h2>
+        <ol>
+          <li>1 c Water</li>
+          <li>1 box Strawberry Jello</li>
+          <li>1 c Vodka</li>
+          <li>Redi Whip</li>
+          <li>Fresh Strawberries</li>
         </ol>
       </div>
+    </a> <!-- end 'Santa Hat' recipe -->
 
-    </a> <!-- end 'Villa Spritz' recipe -->
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='other'
+      data-event='christmas'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shot</span>
+        <span class='desc'>Christmas</span>
+        <h2>Santa Shot</h2>
+        <ol>
+          <li>1 part Grenadine</li>
+          <li>1 part Creme de Menthe, green</li>
+          <li>1 part Peppermint Schnapps</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Santa Shot' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      data-event='summer'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <h2>Smoking Carribean Sunset</h2>
+        <ol>
+          <li>Hickory Wood Chips</li>
+          <li>Splash of Grenadine</li>
+          <li>0.5 oz Lemon Juice</li>
+          <li>1 oz Triple Sec</li>
+          <li>2 oz Coconut Rum</li>
+          <li>3 oz Pineapple Juice</li>
+        </ol>
+        <span class='steps'>Cover the bottom of the glass in a thin layer of grenadine. Add the rest of the liquid ingredients to a shaker w/ ice and shake. Fill glass halfway w/ ice. Layer the drink onto the grenadine with a strainer. Fill w/ ice and smoke w/ hickory.</span>
+      </div>
+    </a> <!-- end 'Smoking Carribean Sunset' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='rum'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shooter</span>
+        <h2>Unnamed Shot</h2>
+        <h3>Equal Parts</h3>
+        <ol>
+          <li>Grenadine</li>
+          <li>Pineapple Juice</li>
+          <li>Coconut Rum</li>
+          <li>Midori</li>
+        </ol>
+        <span class='steps'>Shake pineapple juice, coconut rum, and midori to a shaker with ice and shake. Strain into a shot glass, then add grenadine.</span>
+      </div>
+    </a> <!-- end 'Unnamed Shot' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='vodka'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Vampire</h2>
+        <ol>
+          <li>1/4 c Sugar</li>
+          <li>2 c Raspberries</li>
+          <li>2 oz Amaretto</li>
+          <li>2 oz Orange Juice</li>
+          <li>4 oz Vodka</li>
+          <li>6 oz Club Soda</li>
+        </ol>
+      <span class='steps'>Use sugar and raspberries to make raspberry puree. Fill a syringe with the puree + serve alongside or in the drink</span>
+      </div>
+    </a> <!-- end 'Vampire' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='vodka'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Vampire Kiss</h2>
+        <ol>
+          <li>0.5 oz Cranberry Juice</li>
+          <li>1.5 oz Vodka</li>
+          <li>2 oz Chambord</li>
+          <li>3 oz Champagne or Sparkling Wine</li>
+        </ol>
+      <span class='steps'>Rim w/ rasperry puree + salt or sugar.</span>
+      </div>
+    </a> <!-- end 'Vampire Kiss' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='drink'
+      data-base='rum'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Drink</span>
+        <span class='desc'>Halloween</span>
+        <h2>Zombie</h2>
+        <ol>
+          <li>1 part Triple Sec</li>
+          <li>1 part Grenadine</li>
+          <li>1.5 part Bacardi</li>
+          <li>1.5 part Bacardi Black</li>
+          <li>2 parts Orange Juice</li>
+          <li>2 parts Sweet & Sour</li>
+        </ol>
+      </div>
+    </a> <!-- end 'Zombie' recipe -->
+
+    <a class='recipe-card' href=''
+      data-category='shot'
+      data-base='other'
+      data-event='halloween'
+      target='_blank'>
+
+      <img src=''>
+      <div class='card-content'>
+        <span class='tag'>Shot</span>
+        <span class='desc'>Halloween</span>
+        <h2>Zombie Brain Hemorrhage</h2>
+        <ol>
+          <li>4 parts Peach Schnapps</li>
+          <li>1 part Creme de Menthe</li>
+          <li>2 parts Bailey's</li>
+          <li>1 part Grenadine</li>
+        </ol>
+        <span class='steps'>Add peach schnapps to glass, then creme de menthe. Float Bailey's on top. Slowly add drops of grenadine for visual effect.</span>
+      </div>
+    </a> <!-- end 'Zombie Brain Hemorrhage' recipe -->
 
   </section>
 
@@ -407,35 +668,7 @@
 
   });
 
-  // Floating particles
-  const wrapper = document.getElementById('background-wrapper');
-  for (let i = 0; i < 20; i++) {
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
-
-    const size = Math.random() * 10 + 5;
-    particle.style.width = particle.style.height = `${size}px`;
-
-    // random horizontal start
-    const startX = Math.random() * 100;
-    particle.style.left = `${startX}vw`;
-
-    // random vertical start
-    const startY = Math.random() * 100;
-    particle.style.top = `${startY}vh`;
-
-    // random animation duration and delay
-    particle.style.animationDuration = `${10 + Math.random() * 20}s`;
-
-    // random horizontal drift (angle)
-    const drift = (Math.random() * 2 - 1) * 50;
-    particle.style.setProperty('--drift', `${drift}px`);
-
-    wrapper.appendChild(particle);
-  }
-
   </script>
 
 </body>
 </html>
-
