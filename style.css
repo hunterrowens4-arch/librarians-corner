@@ -27,12 +27,11 @@ body {
   margin: 0 15px 0.3em;
 }
 
-.category-button, .filters button, .lang-button, .music-button, .prod-button, .recipe-button, .sub-button {
-  animation: pulse 2.5s infinite alternate, buttonBaseGlow 10s ease infinite;
-  background: linear-gradient(135deg, #cfa0ff, #7df9ff);
+.category-button, .filters button {
+  background: white;
   border: none;
   border-radius: 16px;
-  color: #1a0d2b;
+  color: #500000;
   cursor: pointer;
   display: inline-block;
   font-size: 1.4rem;
@@ -46,36 +45,6 @@ body {
   z-index: 1;
 }
 
-.category-button::before, .lang-button::before, .music-button::before, prod-button::before, .sub-button::before {
-  background: linear-gradient(120deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 80%);
-  content: '';
-  height: 200%;
-  left: -75%;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: -50%;
-  transform: skewX(-25deg) translateX(0);
-  transition: all 0.5s ease;
-  width: 50%;
-}
-
-.category-button:hover::before, .lang-button:hover::before, .music-button:hover::before, .prod-button:hover::before, .sub-button:hover::before {
-  animation: neonFlare 0.8s forwards;
-}
-
-.category-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-#content {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-
 .desc, .tag {
   display: block;
   padding 3px 9px;
@@ -87,7 +56,7 @@ body {
 
 .filters {
   background: hsla(0,0%,0%,0.5);
-  border: 2px solid #cfa0ff;
+  border: 2px solid white;
   display: inline-block;
   text-align: center;
   width: 95%;
@@ -103,58 +72,26 @@ body {
   margin: 10px 0 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header img {
+  width: 10%;
+}
+
 h1 {
-  color: #cfa0ff;
+  color: white;
+  display: inline;
   font-size: 3rem;
   margin-bottom: 50px;
   position: relative;
-  text-shadow: 0 0 20px rgba(207,160,255,0.8), 0 0 40px rgba(125,249,255,0.4);
   z-index: 1;
 }
 
 h3 {
   margin: 0;
-}
-
-@keyframes buttonBaseGlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@keyframes float {
-  0% { transform: translateY(100vh) translateX(0) scale(0.5); }
-  100% { transform: translateY(-20vh) translateX(20vw) scale(1); }
-}
-
-@keyframes neonFlare {
-  0% { transform: skewX(-25deg) translateX(-150%); opacity: 0; }
-  50% { opacity: 1; }
-  100% { transform: skewX(-25deg) translateX(250%); opacity: 0; }
-}
-
-@keyframes pulse {
-  0%, 100% { box-shadow: 0 0 35px rgba(125,249,255,0.7), 0 0 30px rgba(207,160,255,0.5); }
-  50% { box-shadow: 0 0 50px rgba(125,249,255,0.9), 0 0 45px rgba(207,160,255,0.7); }
-}
-
-.lang-button, .music-button, .prod-button, .sub-button {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.lang-button.show, .music-button.show, .prod-button.show, .sub-button.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.lang-buttons-container, .prod-buttons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 li {
@@ -166,18 +103,11 @@ ol {
   margin: 0 0 1em;
 }
 
-.particle {
-  animation: float 15s linear infinite;
-  background: rgba(125,249,255,0.3);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 0;
-}
-
 .recipe-card {
+  background: white;
   border: 1px solid rgba(255,255,255,.2);
   border-radius: 14px;
-  color: inherit;
+  color: #500000;
   display: block;
   margin: 0 0 2em;
   overflow: hidden;
