@@ -73,12 +73,16 @@ body {
 }
 
 header {
+  align-items: center;
   display: flex;
   justify-content: space-around;
+  line-height: 2em;
 }
 
 header img {
-  width: 10%;
+  height: 5em;
+  margin: 0 10px;
+  object-fit: fill;
 }
 
 h1 {
@@ -86,6 +90,7 @@ h1 {
   display: inline;
   font-size: 3rem;
   margin-bottom: 50px;
+  padding: 0 10px;
   position: relative;
   z-index: 1;
 }
