@@ -47,7 +47,7 @@ body {
 
 .desc, .tag {
   display: block;
-  padding 3px 9px;
+  padding: 3px 9px;
   border-radius: 10px;
   font-size: 12px;
   opacity: .8;
